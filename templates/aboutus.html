@@ -1,0 +1,32 @@
+{% extends 'front.html' %}
+{% block content %}
+ <div class="about">
+      <h2 style="margin-left:620px;margin-bottom:10px">About Us</h2>
+    </div>
+    <div class="content">
+      <p style="margin-left:20px;margin-right:20px;">
+        Movies are the cultural artifacts created by specific cultures. It is considered to be an important artform, a source of popular entertainment and a powerful medium for educating citizens. Every individual has its own interests of various genres in movies. There are movies that we never forget and marks a huge impact in our lives.<br><br>
+        <strong>Movie Recommender</strong> gives you a platform where you get to know similar kind of movies you have watched in past. There is always a delima of what to watch next?. Here, It provides Top 20 best suited list of movies based on the searched interest. Therefore, Now you need not to look for a needle in a haystack, directly visit our website where your search comes to an End. So, Grab Your Popcorn And Binge-Watch.
+      </p>
+    </div>
+    <div class="meet">
+      <h2 style="margin-left:600px;margin-top:15px;margin-bottom:15px"> Meet The Team</h2>
+    </div>
+
+        <div class="imgcontainer">
+          <img src="{{url_for('static', filename='one.png')}}" alt="member1_name">
+        </div>
+        <div class="imgcontainer">
+          <img src="{{url_for('static', filename='two.png')}}"alt="member2_name">
+        </div>
+        <div class="imgcontainer">
+          <img src="{{url_for('static', filename='three.png')}}" alt="member3_name">
+        </div>
+        <div class="imgcontainer">
+          <img src="{{url_for('static', filename='four.png')}}" alt="member3_name">
+        </div>
+        <div class="imgcontainer">
+          <img src="{{url_for('static', filename='five.png')}}" alt="member3_name">
+        </div>
+        
+{% endblock %}

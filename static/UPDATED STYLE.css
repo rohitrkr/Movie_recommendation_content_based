@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.search
+{
+	
+    margin-left:280px;
+    margin-top: 100px;
+    width: 60%;
+    border: 3px solid #e6f1e6;
+    padding: 20px;
+}
+#input{
+	border-radius: round;
+	margin-left: 18px;
+	width: 73%;
+	font-size:25px;
+}
+#searching
+{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "Roboto Cn", sans-serif ;
+    color: white;
+    
+}
+.addMore
+{
+	border-radius: round;
+	float: right;
+	font-size:20px;
+	width:12%;
+	margin-top:3px;
+}
+h4{
+	font-size: 15px; 
+	color: rgb(255,250,250);
+	margin-left:480px;
+	margin-top:50px;
+}
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color: rgb(228,211,211);
+
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("romain-mathon-_0I4rH8XtgM-unsplash.jpg") center no-repeat;
+	background-size: cover;
+	position: relative;
+    overflow: hidden;
+}
+
+.container{
+	max-width: 120rem;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.menu-toggle{
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #eeeeee;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+nav{
+	padding-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+
+.brand
+{
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Ranchers', cursive;
+
+}
+
+ nav ul{
+     display: flex;
+ }
+ nav ul li{
+   list-style: none;
+
+ }
+ nav ul li a{
+     padding: 1rem 0;
+     margin: 0 3rem;
+     position: relative;
+     letter-spacing: 2px;
+ }
+ nav ul li a:last-child{
+     margin-right: 0;
+ }
+
+ nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+ 
+ nav ul li a::before,
+ nav ul li a::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(240, 224, 227);
+      left: 0;
+      transform: scaleX(0);
+    transition: all .5s;
+ }
+ nav ul li a::before{
+     top: 0;
+     transform-origin: left;
+
+
+ }
+ nav ul li a::after{
+
+    bottom: 0;
+    transform-origin: right;
+ }
+ 
+ nav ul li a:hover::before,
+nav ul li a:hover::after{
+transform: scaleX(1);
+}
+
+
+/*---------------------------------------CONTACT CSS------------------------------------------*/
+#name{
+	width:70%;
+	margin-left: 46px;
+	padding:5px;
+	font-size: 15px;
+}
+#email{
+	width:70%;
+	margin-left: 46px;
+	padding:5px;
+	font-size: 15px;
+}
+
+#msg{
+	font-size: 15px;
+	margin-top:25px;
+	width:90%;
+	margin-left: 33px;
+	padding:5px;
+}
+.form{
+	position:absolute;
+	top:25%;
+	left:5%;
+	font-size:15px;
+	border-radius: round;
+	border: 3px solid #e6f1e6;
+	width:40%;
+	padding:30px;
+	letter-spacing: 2px;
+	font-size: 20px;
+    font-weight: 200;
+    font-family: "Roboto Cn", sans-serif ;
+    color: white;
+}
+.shift{
+	margin-left:22%;
+}
+h2{
+	margin-right:19%;
+	margin-left:19%;
+	margin-bottom:5%;
+	color:white;
+	font-family: 'Roboto Cn', sans-serif ;
+	font-weight: 400;
+}
+
+.contact{
+	float:right;
+	margin-top:180px;
+	margin-right:450px;
+	border: 3px solid #e6f1e6;
+	width:30%;
+	padding:30px;
+	letter-spacing: 2px;
+	font-size: 20px;
+    font-weight: 200;
+    font-family: "Roboto Cn", sans-serif ;
+    color: white;
+
+}
+
+.contact li{
+	margin-left:100px;
+	margin-bottom:10px;
+}
+
+/*====================================ABOUT======================================*/
+
+.about{
+	width:100%;
+	font-size: 20px;
+	font-weight:400;
+}
+.content{
+	text-align: justify;
+	margin-bottom:10px;
+	width:100%;
+	font-size:15px;
+	font-weight:200;
+	color:white;
+	opacity:70%;
+}
+.meet{
+	width:100%;
+	font-size: 20px;
+	font-weight: 400;
+}
+.tagline{
+	background-color: black;
+	width:100%;
+	font-size: 20px;
+	font-weight:400;
+}
+img{
+	width:200px;
+	float:left;
+	margin: 15px 25px 0px 45px;
+}
+.imgcontainer{
+	width:100%;
+}
+

@@ -1,0 +1,26 @@
+{% extends 'front.html' %}
+{% block content %}
+<div>
+
+<form action="{{url_for('result')}}">
+<div class="search">
+    <label for="search"  style="font-size: 25px; color: beige;">Search</label>
+    <input type="text" placeholder="search HOLYWOOD movie name..." style="width: 294px;" id="search" name="movie">
+   <input type="submit" class="addMore" value="Enter" required>
+</div>
+</form>
+<div class="hmsg"><h4>To know similar movies like this click ENTER.<h4> 
+
+</div>
+
+
+
+
+
+
+<div style="color: white; font-size:18px;">Example... 
+avatar, pirates of the caribbean: at world's end, spectre, the dark knight rises, batman v superman: dawn of justice, john carter, superman returns and more...
+
+
+ </div>
+{% endblock %}

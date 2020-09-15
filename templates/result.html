@@ -1,0 +1,24 @@
+{% extends 'front.html' %}
+{% block content %}
+
+{% if t=='s' %}
+  <div>
+    <h2 style="color:rgb(255 67 48); font-size: 37px;">ERROR SEARCHING : Sorry! This movie is not in our database.</h3>
+    <h2 style="color:rgb(255 67 48); font-size: 37px;">Please check if you spelled it correct.</h3>
+    <h2 style="color:rgb(255 67 48); font-size: 37px;">Or try with another movie.</h3>
+  </div>
+
+  {% else %}
+  <div>
+    <h1 style="color:rgb(0, 102, 255); font-size: 37px;">"{{movie}}" is a great choice.</h1>
+    <h1 style="color:rgb(0, 102, 255)">Here are some more like this</h3>
+  </div>
+
+    <ul style="font-size: 21px">
+      {% for m in r %}
+        <li class="list-group-item" style="color:rgb(0, 179, 0)"><strong>{{m|capitalize}}</strong></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+{% endblock %}
